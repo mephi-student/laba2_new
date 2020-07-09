@@ -166,7 +166,7 @@ void testLinkedList () {
     std::cout << "x.Append(-1): " << x << std::endl;
     x.Prepend(-1);
     std::cout << "x.Prepend(-1): " << x << std::endl;
-    Lab::LinkedList l = *x.Concat(*(x.GetSubList(2, 4)));
+    Lab::LinkedList <int> l = *x.Concat(*(x.GetSubList(2, 4)));
     std::cout << "l = *x.Concat(*(x.GetSubList(2, 4))): " << l << std::endl;
 
     x.InsertAt(0, 2);
